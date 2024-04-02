@@ -1,0 +1,61 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Registration.Views.Window3"
+        Title="Window3"
+        Background="DarkSlateGray">
+    
+        <SplitView Name="MySplitView" PanePlacement="Left"  PaneBackground="#16A085" IsPaneOpen="False" CompactPaneLength="100" OpenPaneLength="150">
+                <SplitView.Pane>
+                        <StackPanel Spacing="5">
+                                <Border Margin="5" CornerRadius="100" BorderBrush="Azure" BorderThickness="1" Width="50" >
+                                <ListBoxItem CornerRadius="30" HorizontalAlignment="Center">-</ListBoxItem>
+                                </Border>
+                                
+                                <StackPanel Spacing="5">
+                                <Border HorizontalAlignment="Center" CornerRadius="5"  BorderBrush="Azure" BorderThickness="1" Width="105" Height="40">
+                                <Button HorizontalAlignment="Left" >-------------</Button>
+                                </Border>
+                                        
+                                        <Border HorizontalAlignment="Center" CornerRadius="5"  BorderBrush="Azure" BorderThickness="1" Width="105" Height="40">
+                                                <Button HorizontalAlignment="Center">-------------</Button>
+                                        </Border>
+                                        
+                                        <Border HorizontalAlignment="Center" CornerRadius="5"  BorderBrush="Azure" BorderThickness="1" Width="105" Height="40">
+                                                <Button HorizontalAlignment="Center">-------------</Button>
+                                        </Border>
+                                        
+                                        <Border HorizontalAlignment="Center" CornerRadius="5"  BorderBrush="Azure" BorderThickness="1" Width="105" Height="40">
+                                                <Button HorizontalAlignment="Center">-------------</Button>
+                                        </Border>
+                                        
+                                </StackPanel>
+                        </StackPanel>
+                </SplitView.Pane>
+                
+                <SplitView.Content>
+                        <StackPanel>
+                        
+                        <Border CornerRadius="12" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1" Width="40" Height="40">
+                        <Grid>
+                                <Button CornerRadius="10" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="0" Click="Button_OnClick">
+                                        <Image Width="25" Height="25" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-hamburger-7710488.png"/>
+                                </Button>
+                        </Grid>
+                        </Border>
+                        
+                        <Border HorizontalAlignment="Center" VerticalAlignment="Top" BorderBrush="Azure" BorderThickness="1" Width="250" Height="250">
+                                <StackPanel Margin="10" Spacing="5">
+                                        <TextBlock FontSize="15" Margin="5" HorizontalAlignment="Center">Ваши даные</TextBlock>
+                                        <StackPanel Margin="20" Spacing="10" Orientation="Vertical">
+                                                <TextBox Name="Your_name"  Watermark="Your name"></TextBox>
+                                                <TextBox Name="Your_pass" Watermark="Your pass"></TextBox>
+                                        </StackPanel>
+                                </StackPanel>
+                        </Border>
+                        </StackPanel>
+                </SplitView.Content>
+        </SplitView>
+</Window>

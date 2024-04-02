@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Registration.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Registration.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Registration"
+        WindowStartupLocation="CenterScreen"
+        Background="DarkSlateGray">
+    
+    <Border CornerRadius="5" Background="Azure" x:Name="Border" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" BorderBrush="#16A085" BorderThickness="3" Width="350" Height="400">
+            <StackPanel>
+                                         <Border CornerRadius="5" Background="#16A085" BorderBrush="#16A085"  BorderThickness="2" Width="350" Height="60">
+                                            <TextBlock Margin="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center">Login Form</TextBlock>
+                                        </Border>
+                <StackPanel Margin="70" Spacing="25">
+                                        <Border CornerRadius="5" BorderBrush="#16A085" BorderThickness="2" Width="250" Height="40">
+                                            <Panel>
+                                                <TextBox Name="Name" Watermark="Name" BorderThickness="2" BorderBrush="#16A085" CornerRadius="5" Width="210" Height="40" HorizontalAlignment="Right"></TextBox>
+                                                <Border CornerRadius="5" Background="#16A085" HorizontalAlignment="Left"  BorderBrush="#16A085" BorderThickness="1" Width="40" Height="40">
+                                                    <Image Width="20" Height="20" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-boy-4537069.png"></Image>
+                                                </Border>
+                                            </Panel>
+                                        </Border>
+                                        <Border x:Name="Border2" CornerRadius="5" BorderBrush="#16A085" BorderThickness="2" Width="250" Height="40">
+                                            <Panel>
+                                                <TextBox Name="password" Watermark="Password" BorderThickness="2" BorderBrush="#16A085" CornerRadius="5" Width="211" Height="40" HorizontalAlignment="Right"></TextBox>
+                                                <Border CornerRadius="5" Background="#16A085" HorizontalAlignment="Left"  BorderBrush="#16A085" BorderThickness="1" Width="40" Height="40">
+                                                <Image  Width="20" Height="20" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-padlock-1371160.png" />
+                                            </Border>
+                                            </Panel>
+                                        </Border>
+                    <Border Background="#16A085" BorderBrush="#16A085" Width="249" Height="40" CornerRadius="5" >
+                    <Button Margin="1" Background="#16A085" Content="Login" Foreground="Azure" HorizontalContentAlignment="Center" Width="250" Height="30" Click="Button_OnClick2"/>
+                    </Border>
+                    <Panel>
+                    <TextBlock Margin="9" Foreground="Black" HorizontalAlignment="Left" >Not a member? </TextBlock>
+                        <Button HorizontalAlignment="Right" Foreground="#16A085" Click="Button_OnClick" >Signup now </Button>
+                    </Panel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+</Window>

@@ -1,0 +1,51 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Registration.Views.Window2"
+        Title="Window2"
+        WindowStartupLocation="CenterScreen"
+        Background="DarkSlateGray">
+    
+        
+        <Border CornerRadius="5" Background="Azure" x:Name="Border" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" BorderBrush="#16A085" BorderThickness="3" Width="350" Height="450">
+            <StackPanel>
+                                         <Border CornerRadius="5" Background="#16A085" BorderBrush="#16A085"  BorderThickness="2" Width="350" Height="60">
+                                            <TextBlock Margin="1" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center">Signup</TextBlock>
+                                        </Border>
+                <StackPanel Margin="70" Spacing="25">
+                                        <Border CornerRadius="5" BorderBrush="#16A085" BorderThickness="2" Width="250" Height="40">
+                                            <Panel>
+                                                <TextBox Name="name2" Watermark="Enter your name" BorderThickness="2" BorderBrush="#16A085" CornerRadius="5" Width="210" Height="40" HorizontalAlignment="Right"></TextBox>
+                                                <Border CornerRadius="5" Background="#16A085" HorizontalAlignment="Left"  BorderBrush="#16A085" BorderThickness="1" Width="40" Height="40">
+                                                    <Image Width="20" Height="20" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-boy-4537069.png"></Image>
+                                                </Border>
+                                            </Panel>
+                                        </Border>
+                                        <Border x:Name="Border2" CornerRadius="5" BorderBrush="#16A085" BorderThickness="2" Width="250" Height="40">
+                                            <Panel>
+                                                <TextBox Name="Create_password" Watermark="Create password" BorderThickness="2" BorderBrush="#16A085" CornerRadius="5" Width="211" Height="40" HorizontalAlignment="Right"></TextBox>
+                                                <Border CornerRadius="5" Background="#16A085" HorizontalAlignment="Left"  BorderBrush="#16A085" BorderThickness="1" Width="40" Height="40">
+                                                <Image  Width="20" Height="20" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-padlock-1371160.png" />
+                                            </Border>
+                                            </Panel>
+                                        </Border>
+                    <Border CornerRadius="5" BorderBrush="#16A085" BorderThickness="2" Width="250" Height="40">
+                        <Panel>
+                            <TextBox Name="Confirm_password" Watermark="confirm password" BorderThickness="2" BorderBrush="#16A085" CornerRadius="5" Width="210" Height="40" HorizontalAlignment="Right"></TextBox>
+                            <Border CornerRadius="5" Background="#16A085" HorizontalAlignment="Left"  BorderBrush="#16A085" BorderThickness="1" Width="40" Height="40">
+                                <Image Width="20" Height="20" Source="C:\Users\Mamadziyo\OneDrive\Рабочий стол\UI\free-icon-phone-call-7833701.png" />
+                            </Border>
+                        </Panel>
+                    </Border>
+                    <Border Background="#16A085" BorderBrush="#16A085" Width="249" Height="40" CornerRadius="5" >
+                    <Button Margin="1" Background="#16A085" Content="Signup" Foreground="Azure" HorizontalContentAlignment="Center" Width="250" Height="30"/>
+                    </Border>
+                    <Panel>
+                        <Button HorizontalAlignment="Center" Foreground="#16A085" Click="Button_OnClick">Login </Button>
+                    </Panel>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+</Window>
