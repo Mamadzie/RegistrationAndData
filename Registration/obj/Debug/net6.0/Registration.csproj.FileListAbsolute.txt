@@ -134,3 +134,4 @@ C:\Users\Mamadziyo\RiderProjects\Registration\Registration\obj\Debug\net6.0\Regi
 C:\Users\Mamadziyo\RiderProjects\Registration\Registration\obj\Debug\net6.0\Registration.genruntimeconfig.cache
 C:\Users\Mamadziyo\RiderProjects\Registration\Registration\obj\Debug\net6.0\ref\Registration.dll
 C:\Users\Mamadziyo\RiderProjects\Registration\Registration\obj\Debug\net6.0\Registra.C341AD68.Up2Date
+C:\Users\Mamadziyo\RiderProjects\Registration\Registration\obj\Debug\net6.0\Registration.sourcelink.json

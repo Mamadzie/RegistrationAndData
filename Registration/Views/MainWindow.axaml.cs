@@ -17,7 +17,6 @@ namespace Registration.Views
         public MainWindow()
         {
             InitializeComponent();
-            
         }
         
         public void Button_OnClick(object? sender, RoutedEventArgs e)
